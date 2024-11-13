@@ -15,6 +15,15 @@ const nextConfig = {
     ];
   },
   swcMinify: true,
+  images: {
+    domains: ['localhost'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
+  },
 };
 
 export default withNextIntl(nextConfig);

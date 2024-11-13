@@ -1,3 +1,8 @@
+export interface Ratings {
+  totalRatings: number;
+  id: string;
+  rating: number;
+}
 export interface Category {
   id: string;
   name: string;
@@ -9,6 +14,7 @@ export interface Photo {
 }
 
 export interface MoviesData {
+  ratings: Ratings;
   category: Category;
   releaseDate: string;
   photo: Photo;
@@ -17,8 +23,6 @@ export interface MoviesData {
   directors: string[];
   actors: string[];
   id: string;
-  createdAt: string;
-  updatedAt: string;
 }
 
 export interface MovieResponse {

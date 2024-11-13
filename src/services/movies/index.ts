@@ -1,7 +1,7 @@
 import Request from '@services/http-services';
-import { MoviesData } from './types';
+import { MovieResponse } from './types';
 
-export const getMoviesService = async (id?: string): Promise<MoviesData> => {
+export const getMoviesService = async (id?: string): Promise<MovieResponse> => {
   try {
     let response: any;
     if (id) {
