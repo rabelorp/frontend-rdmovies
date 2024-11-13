@@ -1,0 +1,22 @@
+version: '3.3'
+
+services:
+  app:
+    container_name: RDMovies-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '${APP_PORT}:3000'
+    environment:
+      NODE_ENV: $NODE_ENV
+      NEXTAUTH_SECRET: $NEXTAUTH_SECRET
+      NEXTAUTH_URL: $NEXTAUTH_URL
+      NEXT_PUBLIC_API_URL: $NEXT_PUBLIC_API_URL
+      NEXT_PUBLIC_APP_NAME: $NEXT_PUBLIC_APP_NAME
+    networks:
+      - rdmovies-network
+
+networks:
+  rdmovies-network:
+    driver: bridge

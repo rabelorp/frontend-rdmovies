@@ -1,0 +1,9 @@
+{
+  "Login": {
+    "signIn": "Entrar",
+    "email": "E-mail",
+    "password": "Senha",
+    "rememberMe": "Lembrar-me",
+    "forgotPassword": "Esqueceu a senha?"
+  }
+}

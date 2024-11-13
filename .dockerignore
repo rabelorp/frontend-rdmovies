@@ -1,0 +1,26 @@
+# Node modules e dependências
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build files
+.next
+out
+
+# Logs
+*.log
+logs
+*.txt
+
+# IDE files
+.vscode
+.idea
+
+# MacOS files
+.DS_Store
+
+# Dockerfiles
+Dockerfile
+docker-compose.yml
+
+ 
